@@ -1,8 +1,8 @@
 function largestNumberAge(number) {
-  let largest = 1;
+  let largest = 0;
   for (i = 0; i < number.length; i++) {
     let element = number[i];
-    if (element < largest) {
+    if (element > largest) {
       largest = element;
     }
   }
